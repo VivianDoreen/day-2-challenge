@@ -5,13 +5,13 @@ the number of duplicates in the original string
 """
 from collections import OrderedDict
 
-#A python method to returns a tuple
 def count_vowels(string):
-    "getting the first tupple"
+    "A python method to returns a tuple"
     string = string.lower()
     string = string.replace(' ', '')
-    print(string)
     vowel = "aeiou"
+
+    #getting the first tupple
     final = [each for each in string if each in vowel]
     final_join = ''.join(final)
     final_tuple1 = tuple(final_join)
@@ -25,7 +25,7 @@ def count_vowels(string):
     count_tuple_dup = len(tuple_dup)
     count_tuple_dup_final = (count_tuple_dup,)
 
-    #Joing the first and second tupple
+    #combining the first and second tupple
     combine_tuple = get_unique_vowels_tuple + count_tuple_dup_final
     print(combine_tuple)
     #print(tuple_dup)
