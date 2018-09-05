@@ -28,7 +28,6 @@ def count_vowels(string):
     #combining the first and second tupple
     combine_tuple = get_unique_vowels_tuple + count_tuple_dup_final
     print(combine_tuple)
-    #print(tuple_dup)
-    #print(get_dup1_char)
 
-count_vowels('dahdah')
+count_vowels('dahdah')  # will return (‘a’, 3)
+count_vowels('drink water') # will return (‘iae’, 0)
